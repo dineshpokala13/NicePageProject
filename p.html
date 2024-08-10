@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .room {
+            width:100px;
+            height:100px;
+            background-color:blue;
+            outline:none;
+            cursor:pointer;
+        }
+
+        .member{
+            display:none;
+            height:200px;
+            background-color:green;
+        }
+
+        .room:focus + .member{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <acronym title="hyper text markup language"><a href="https://nicepage.com/t/71879/sport-club-template">HTML</a></acronym>
+    <hr>
+
+    <div>
+        <div class="room" tabindex="1">Click me</div>
+        <div class="member"></div>
+        <!-- tabindex="1" -->
+    </div>
+</body>
+</html>
